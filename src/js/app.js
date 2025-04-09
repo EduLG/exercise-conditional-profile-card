@@ -71,11 +71,11 @@ window.onload = function() {
     github: "4geeksacademy",
     linkedin: "4geeksacademy",
     instagram: "4geeksacademy",
-    name: Marcial,
-    lastName: Martinez,
-    role: Marciana,
-    country: Madril,
-    city: ValdepeñascodelGuijarro
+    name: "Name",
+    lastName: "Last Name",
+    role: "Role",
+    country: "Country",
+    city: "City"
   };
   render(window.variables); // render the card for the first time
 
