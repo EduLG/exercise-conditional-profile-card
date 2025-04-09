@@ -33,8 +33,9 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name}${variables.lastName}</h1>
-          <h2>${variables.role}</h2>
+          <h1>${variables.name || "Name"}${variables.lastName ||
+    "Last Name"}</h1>
+          <h2>${variables.role || "Role"}</h2>
           <h3>${variables.city},${variables.country}</h3>
           <ul class="${variables.socialMediaPosition}">
 
@@ -67,15 +68,15 @@ window.onload = function() {
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
-    twitter: "4geeksacademy",
-    github: "4geeksacademy",
-    linkedin: "4geeksacademy",
-    instagram: "4geeksacademy",
-    name: "Name",
-    lastName: "Last Name",
-    role: "Role",
-    country: "Country",
-    city: "City"
+    twitter: null,
+    github: null,
+    linkedin: null,
+    instagram: null,
+    name: null,
+    lastName: null,
+    role: null,
+    country: null,
+    city: null
   };
   render(window.variables); // render the card for the first time
 
