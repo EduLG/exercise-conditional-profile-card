@@ -36,19 +36,23 @@ function render(variables = {}) {
           <h1>${variables.name || "Name"}${variables.lastName ||
     "Last Name"}</h1>
           <h2>${variables.role || "Role"}</h2>
-          <h3>${variables.city},${variables.country}</h3>
+          <h3>${variables.city || "City"},${variables.country || "Country"}</h3>
           <ul class="${variables.socialMediaPosition}">
 
-            <li><a href="https://twitter.com/${variables.twitter}">
+            <li><a href="https://twitter.com/${variables.twitter ||
+              "4geeksacademy"}">
             <i class="fab fa-twitter"></i></a></li>
 
-            <li><a href="https://github.com/${variables.github}">
+            <li><a href="https://github.com/${variables.github ||
+              "4geeksacademy"}">
             <i class="fab fa-github"></i></a></li>
 
-            <li><a href="https://linkedin.com/${variables.linkedin}">
+            <li><a href="https://linkedin.com/${variables.linkedin ||
+              "4geeksacademy"}">
             <i class="fab fa-linkedin"></i></a></li>
 
-            <li><a href="https://instagram.com/${variables.instagram}">
+            <li><a href="https://instagram.com/${variables.instagram ||
+              "4geeksacademy"}">
             <i class="fab fa-instagram"></i></a></li>
 
           </ul>
